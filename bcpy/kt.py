@@ -1,6 +1,9 @@
+import os
 import pandas as pd
 import requests
 
+from urllib.parse import urljoin
+from typing import Any
 from datetime import date
 
 
@@ -10,9 +13,19 @@ bcp_env = "prod"
 kt_game_type = 26
 
 
+def bcp_request(path: str, params: dict[str, Any]) -> list[dict[Any, Any]]:
+    url = urljoin(f"https://{bcp_api_host}/{bcp_env}/", path)
+
+    r = requests.get(url, params=params)
+
+    if r.status_code != requests.codes.ok:
+        r.raise_for_status()
+
+    return r.json()
+
+
 # TODO - let strs/dates be passed instead of just strs
 def list_kt_events(st: str, et: str, limit: int = 200, only_ended: bool = True) -> pd.DataFrame:
-    event_list_url = f"https://{bcp_api_host}/{bcp_env}/eventlistings"
     params = {
         "startDate": st,
         "endDate": et,
@@ -20,13 +33,9 @@ def list_kt_events(st: str, et: str, limit: int = 200, only_ended: bool = True) 
         "limit": limit
     }
 
-    r = requests.get(event_list_url, params=params)
+    rj = bcp_request("eventlistings", params)
 
-    if r.status_code != requests.codes.ok:
-        print("there was a problem querying the bcp api")
-        r.raise_for_status()
-
-    es = pd.DataFrame(r.json())
+    es = pd.DataFrame(rj)
 
     if only_ended:
         es = es[es.ended].copy()
@@ -35,12 +44,12 @@ def list_kt_events(st: str, et: str, limit: int = 200, only_ended: bool = True) 
 
 
 def get_kt_event_placings(eid: str, limit: int = 500) -> pd.DataFrame:
-    event_placing_url = f"https://{bcp_api_host}/{bcp_env}/players"
     params = {
         "eventId": eid,
         "inclEvent": "false",
 
-        # TODO - can use this to have some things included, needs another "metrics" param which tells it what to include?
+        # TODO - can use this to have some things included, needs another
+        # "metrics" param which tells it what to include?
         "inclMetrics": "false",
         "inclArmies": "true",
         "limit": limit
@@ -48,29 +57,20 @@ def get_kt_event_placings(eid: str, limit: int = 500) -> pd.DataFrame:
         # inclTeams
     }
 
-    r = requests.get(event_placing_url, params=params)
+    rj = bcp_request("players", params)
 
-    if r.status_code != requests.codes.ok:
-        print("there was a problem querying the bcp api")
-        r.raise_for_status()
-
-    return pd.json_normalize(r.json())
+    return pd.json_normalize(rj)
 
 
 def get_kt_event_pairings(eid: str, limit: int = 500) -> pd.DataFrame:
-    event_pairing_url = f"https://{bcp_api_host}/{bcp_env}/pairings"
     params = {
         "eventId": eid,
         "limit": limit
     }
 
-    r = requests.get(event_pairing_url, params=params)
+    rj = requests.get("pairings", params=params)
 
-    if r.status_code != requests.codes.ok:
-        print("there was a problem querying the bcp api")
-        r.raise_for_status()
-
-    return pd.json_normalize(r.json())
+    return pd.json_normalize(rj)
 
 
 if __name__ == "__main__":
