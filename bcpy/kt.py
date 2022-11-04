@@ -4,10 +4,12 @@ import pandas as pd
 import numpy as np
 import requests
 import json
+import time
 
+from tqdm import tqdm
 from dataclasses import dataclass
 from urllib.parse import urljoin
-from typing import Any
+from typing import Any, Optional
 from datetime import date
 
 
@@ -40,19 +42,16 @@ def bcp_request(path: str, params: dict[str, Any] = {}) -> list[dict[Any, Any]]:
     return r.json()
 
 
-def _kt_events_df(rj: list[dict[Any, Any]], only_ended: bool) -> pd.DataFrame:
+def _kt_events_df(rj: list[dict[Any, Any]]) -> pd.DataFrame:
     es = pd.DataFrame(rj)
 
     # un-mongo-ify the columns
     es.columns = [inflection.underscore(c) for c in es.columns]
 
-    # Exclude events that are not yet ended. This should mostly be to clean up
-    # garbage events, including those which haven't even started.
-    if only_ended:
-        es = es[es.ended]
-
     es = es[[
         "event_date",
+        "started",
+        "ended",
         "name",
         "event_obj_id",
         "number_of_rounds",
@@ -65,7 +64,7 @@ def _kt_events_df(rj: list[dict[Any, Any]], only_ended: bool) -> pd.DataFrame:
     return es.copy()
 
 
-def list_kt_events(st: str, et: str, limit: int = 200, only_ended: bool = True) -> pd.DataFrame:
+def list_kt_events(st: str, et: str, limit: int = 200, offset: Optional[int] = None) -> pd.DataFrame:
     """
     Return a `pd.DataFrame` of Kill Team events between the given times with
     columns relevant for stats calculations.
@@ -78,9 +77,12 @@ def list_kt_events(st: str, et: str, limit: int = 200, only_ended: bool = True) 
         "limit": limit
     }
 
+    if offset is not None:
+        params["offset"] = offset
+
     rj = bcp_request("eventlistings", params)
 
-    return _kt_events_df(rj, only_ended)
+    return _kt_events_df(rj)
 
 
 def get_kt_event_placing_sort_order(eid: str) -> list[PlacingDetails]:
@@ -124,7 +126,6 @@ def _kt_placings_df(rj: list[dict[Any, Any]], excl_dropped: bool, place_details:
     ps = pd.json_normalize(rj)
 
     # So we have a way of distinguishing by event.
-    ps["event_obj_id"] = eid
     ps["seed"] = ps.bracket_seed
 
     # Do an unbelievably dodgy sort that I *think* re-implements the BCP
@@ -133,9 +134,13 @@ def _kt_placings_df(rj: list[dict[Any, Any]], excl_dropped: bool, place_details:
     # TODO: This needs to handle pods??? Honestly not sure any KT events even
     # us pods. LGT didn't, and I'm assuming that's one of the largest.
     for pm in place_details:
-        ps[f"sort_{pm.key}"] = ps[pm.key]
-        if pm.negative:
-            ps[f"sort_{pm.key}"] *= -1
+        if pm.key in ps.columns:
+            ps[f"sort_{pm.key}"] = ps[pm.key]
+            if pm.negative:
+                ps[f"sort_{pm.key}"] *= -1
+        else:
+            print(f"⚠️  unable to find key `{pm.key}` to sort placing for event {ps.eventId.iloc[0]}, defaulting to 0")
+            ps[f"sort_{pm.key}"] = 0
 
     if excl_dropped:
         ps = ps[~ps.dropped]
@@ -193,11 +198,15 @@ def get_kt_event_placings(eid: str, limit: int = 500, excl_dropped: bool = True)
     return _kt_placings_df(rj, excl_dropped, pds)
 
 
-def _kt_placings_df(rj: list[dict[Any, Any]]) -> pd.DataFrame:
+def _kt_pairings_df(rj: list[dict[Any, Any]]) -> pd.DataFrame:
     ps = pd.json_normalize(rj)
 
     # un-mongo-ify the columns
     ps.columns = [inflection.underscore(c) for c in ps.columns]
+
+    if len(ps[ps.pairing_table == "TeamPairing"]) > 0:
+        print(f"⚠️  unable to retrieve pairings for event `{ps.event_id.iloc[0]}` since it uses unsupported `TeamPairing` mode")
+        return None
 
     for p in ["player1", "player2"]:
         ps = ps.rename(columns={
@@ -247,13 +256,81 @@ def get_kt_event_pairings(eid: str, limit: int = 500) -> pd.DataFrame:
 
     rj = bcp_request("pairings", params=params)
 
-    return _kt_placings_df(rj)
+    return _kt_pairings_df(rj)
+
+
+def get_all_kt_events(st: str, et: str) -> pd.DataFrame:
+    print(f"getting all kill team events between {st} and {et}...")
+    page_size = 200
+    offset = 0
+
+    rs = []
+    while True:
+        print(f"\t ... fetch from offset {offset}")
+        es = list_kt_events(st, et, limit=page_size, offset=offset if offset > 0 else None)
+        rs.append(es)
+
+        if len(es) < page_size:
+            break
+        else:
+            offset += page_size
+
+    all_es = pd.concat(rs, ignore_index=True)
+
+    print(f"\t✅ got {len(all_es)} kill team events")
+
+    return all_es
+
+
+def _dump(name: str, df: pd.DataFrame, csv: bool, parquet: bool):
+    print(f"dumping {name} (csv={csv}, parquet={parquet})")
+
+    if csv:
+        df.to_csv(f"{name}.csv", index=False)
+
+    if parquet:
+        df.to_parquet(f"{name}.parquet")
+
+
+def dump_kt_meta_raw(st: str, et: str, csv: bool = True, parquet: bool = True):
+    evts = get_all_kt_events(st, et)
+
+    print("\nfiltering to only events that were both started and ended by organisers")
+    evts_complete = evts[evts.started & evts.ended]
+    print(f"\tevents completed: {len(evts_complete)}/{len(evts)}")
+
+    _dump("events", evts_complete, csv, parquet)
+
+    eids = evts_complete.event_obj_id.to_list()
+
+    print(f"\nretrieving placings for {len(eids)} events")
+    pl_rs = []
+    for eid in tqdm(eids):
+        pl = get_kt_event_placings(eid)
+        pl_rs.append(pl)
+
+        # TODO - randomise / increase / be a bit more polite to their API
+        time.sleep(0.1)
+
+    pls = pd.concat(pl_rs, ignore_index=True)
+    print("\tplacings completed: {len(pls)}")
+
+    _dump("placings", pls, csv, parquet)
+
+    print(f"\nretrieving pairings for {len(eids)} events")
+    pr_rs = []
+    for eid in tqdm(eids):
+        pr = get_kt_event_pairings(eid)
+        pr_rs.append(pr)
+
+        # TODO - randomise / increase / be a bit more polite to their API
+        time.sleep(0.1)
+
+    prs = pd.concat(pr_rs, ignore_index=True)
+    print("\tplacings completed: {len(prs)}")
+
+    _dump("pairings", prs, csv, parquet)
 
 
 if __name__ == "__main__":
-    evts = list_kt_events("2022-10-01", "2022-11-15", limit=10)
-    eid = "SDauAbTSeh" # evts.event_obj_id.iloc[0]
-    # eps = get_kt_event_placings(eid)
-    eps = get_kt_event_pairings(eid)
-
-    import pdb; pdb.set_trace()
+    dump_kt_meta_raw("2022-10-01", "2022-11-01")
