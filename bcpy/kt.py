@@ -220,6 +220,10 @@ def _kt_pairings_df(rj: list[dict[Any, Any]]) -> pd.DataFrame:
             f"{p}.game.margin_of_victory": f"{p}_game_margin_of_victory"
         })
 
+        if f"{p}_game_result" not in ps.columns:
+            print(f"⚠️  unable to determine winner for pairing in event `{ps.event_id.iloc[0]}` so dropping all results from the event")
+            return None
+
         ps[f"{p}_game_result_cat"] = ps[f"{p}_game_result"].map({
             0: "loss",
             1: "tie",
@@ -303,19 +307,19 @@ def dump_kt_meta_raw(st: str, et: str, csv: bool = True, parquet: bool = True):
 
     eids = evts_complete.event_obj_id.to_list()
 
-    print(f"\nretrieving placings for {len(eids)} events")
-    pl_rs = []
-    for eid in tqdm(eids):
-        pl = get_kt_event_placings(eid)
-        pl_rs.append(pl)
-
-        # TODO - randomise / increase / be a bit more polite to their API
-        time.sleep(0.1)
-
-    pls = pd.concat(pl_rs, ignore_index=True)
-    print("\tplacings completed: {len(pls)}")
-
-    _dump("placings", pls, csv, parquet)
+    # print(f"\nretrieving placings for {len(eids)} events")
+    # pl_rs = []
+    # for eid in tqdm(eids):
+    #     pl = get_kt_event_placings(eid)
+    #     pl_rs.append(pl)
+    #
+    #     # TODO - randomise / increase / be a bit more polite to their API
+    #     time.sleep(0.1)
+    #
+    # pls = pd.concat(pl_rs, ignore_index=True)
+    # print(f"\tplacings completed: {len(pls)}")
+    #
+    # _dump("placings", pls, csv, parquet)
 
     print(f"\nretrieving pairings for {len(eids)} events")
     pr_rs = []
@@ -327,10 +331,10 @@ def dump_kt_meta_raw(st: str, et: str, csv: bool = True, parquet: bool = True):
         time.sleep(0.1)
 
     prs = pd.concat(pr_rs, ignore_index=True)
-    print("\tplacings completed: {len(prs)}")
+    print(f"\tpairings completed: {len(prs)}")
 
     _dump("pairings", prs, csv, parquet)
 
 
 if __name__ == "__main__":
-    dump_kt_meta_raw("2022-10-01", "2022-11-01")
+    dump_kt_meta_raw("2022-01-01", "2022-11-01")
