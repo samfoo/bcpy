@@ -1,6 +1,7 @@
 import inflection
 import os
 import pandas as pd
+import numpy as np
 import requests
 import json
 
@@ -24,6 +25,11 @@ class PlacingDetails:
 
 
 def bcp_request(path: str, params: dict[str, Any] = {}) -> list[dict[Any, Any]]:
+    """
+    Wrap requests to the BCP JSON API. Raises an error if there's a non-200
+    result.
+    """
+
     url = urljoin(f"https://{bcp_api_host}/{bcp_env}/", path)
 
     r = requests.get(url, params=params)
@@ -35,11 +41,6 @@ def bcp_request(path: str, params: dict[str, Any] = {}) -> list[dict[Any, Any]]:
 
 
 def _kt_events_df(rj: list[dict[Any, Any]], only_ended: bool) -> pd.DataFrame:
-    """
-    Clean up a bunch of stuff from the raw BCP results so that it's more useful
-    to KT stats analysis.
-    """
-
     es = pd.DataFrame(rj)
 
     # un-mongo-ify the columns
@@ -64,8 +65,12 @@ def _kt_events_df(rj: list[dict[Any, Any]], only_ended: bool) -> pd.DataFrame:
     return es.copy()
 
 
-# TODO - let strs/dates be passed instead of just strs
 def list_kt_events(st: str, et: str, limit: int = 200, only_ended: bool = True) -> pd.DataFrame:
+    """
+    Return a `pd.DataFrame` of Kill Team events between the given times with
+    columns relevant for stats calculations.
+    """
+
     params = {
         "startDate": st,
         "endDate": et,
@@ -80,8 +85,21 @@ def list_kt_events(st: str, et: str, limit: int = 200, only_ended: bool = True) 
 
 def get_kt_event_placing_sort_order(eid: str) -> list[PlacingDetails]:
     """
-    Super annoying this is client side... Basically have to re-implement a
-    bunch of sorting logic to get places right.
+    BCP organisers can configure their events with different ways of sorting to
+    determine the podium, with ties ultimately also being broken by a timestamp
+    (I'm guessing either account creation time or time of registering for the
+    event or something).
+
+    Irritatingly, BCP then decides to implement the actual sorting on the
+    client. So to determine the actual placings, a client has to re-implement
+    the sort order.
+
+    The sort order appears to have a number of complications (pods, complete,
+    normal - see re_notes.txt). Rather than try to implement all of that, this
+    does what is the most likely.
+
+    TODO: At some point in the future, probably need to support the other
+    features if found out they are used by KT events.
     """
 
     rj = bcp_request(f"events/{eid}", {
@@ -105,136 +123,120 @@ def get_kt_event_placing_sort_order(eid: str) -> list[PlacingDetails]:
 def _kt_placings_df(rj: list[dict[Any, Any]], excl_dropped: bool, place_details: list[PlacingDetails]) -> pd.DataFrame:
     ps = pd.json_normalize(rj)
 
+    # So we have a way of distinguishing by event.
+    ps["event_obj_id"] = eid
+    ps["seed"] = ps.bracket_seed
+
     # Do an unbelievably dodgy sort that I *think* re-implements the BCP
-    # algo correctly...
+    # algo close enough to correctly...
     #
-    # TODO: This needs to handle pods???
+    # TODO: This needs to handle pods??? Honestly not sure any KT events even
+    # us pods. LGT didn't, and I'm assuming that's one of the largest.
     for pm in place_details:
         ps[f"sort_{pm.key}"] = ps[pm.key]
         if pm.negative:
             ps[f"sort_{pm.key}"] *= -1
 
+    if excl_dropped:
+        ps = ps[~ps.dropped]
+
+    # I think this is close enough for now, assuming no pods or anything.
+    ps = ps.sort_values([f"sort_{pm.key}" for pm in place_details], ascending=False)
+    ps["placing"] = np.arange(len(ps))
+    ps = ps.rename(columns={"index": "placing"})
+    ps["placing"] += 1
+
 
     # un-mongo-ify the columns
     ps.columns = [inflection.underscore(c) for c in ps.columns]
 
-    if excl_dropped:
-        ps = ps[~ps.dropped]
-
-    ps = ps.rename({
-        "mf_swiss_points": "tournament_points",
-        "wh_control_points": "secondary_points",
+    ps = ps.rename(columns={
+        "army.name": "army_name"
     })
 
+    ps = ps[[
+        "event_id",
+        "user_id",
+        "placing",
+        "army_id",
+        "army_name",
 
-    #####
-    #
-    # BCP algo for calculating podium
-    # RE notes:
-    # - Seems like "overall" is hardcoded to "false" in the events I've looked
-    #   at. Maybe this is something I just haven't looked at the right things
-    #   yet? There's a hidden UI element that can turn it on, but hell if I
-    #   know what it is.
-    # - pod == "podium"?
-    # - metrics lets individual event owners set their scoring or something?
-    #
-    #####
-    #
-    # function sortedPlayersArray(players, metrics, overall) {
-    #     var temp = players.slice();
-    #     temp.sort(function (a, b) {
-    #         if (overall) {
-    #             if (a.overallBattlePoints > b.overallBattlePoints) {
-    #                 return -1;
-    #             }
-    #             if (a.overallBattlePoints < b.overallBattlePoints) {
-    #                 return 1;
-    #             }
-    #             if (a.FFGBattlePointsSoS > b.FFGBattlePointsSoS) {
-    #                 return -1;
-    #             }
-    #             if (a.FFGBattlePointsSoS < b.FFGBattlePointsSoS) {
-    #                 return 1;
-    #             }
-    #         } else {
-    #             if (a.podNum && !b.podNum)
-    #                 return -1;
-    #             if (!a.podNum && b.podNum)
-    #                 return 1;
-    #             if (a.podNum < b.podNum)
-    #                 return -1
-    #             if (a.podNum > b.podNum)
-    #                 return 1;
-    #             for (var i = 0; i < metrics.length; i++) {
-    #                 if (metrics[i].isOn) {
-    #                     if (metrics[i].negative) {
-    #                         if (a['pod_'+metrics[i].key] < b['pod_'+metrics[i].key]) {
-    #                             return -1
-    #                         }
-    #                         if (a['pod_'+metrics[i].key] > b['pod_'+metrics[i].key]) {
-    #                             return 1
-    #                         }
-    #                     } else {
-    #                         if (a['pod_'+metrics[i].key] > b['pod_'+metrics[i].key]) {
-    #                             return -1
-    #                         }
-    #                         if (a['pod_'+metrics[i].key] < b['pod_'+metrics[i].key]) {
-    #                             return 1
-    #                         }
-    #                     }
-    #                     if (!a.podNum && !b.podNum) {
-    #                     if (metrics[i].negative) {
-    #                         if (a[metrics[i].key] < b[metrics[i].key]) {
-    #                             return -1
-    #                         }
-    #                         if (a[metrics[i].key] > b[metrics[i].key]) {
-    #                             return 1
-    #                         }
-    #                     } else {
-    #                         if (a[metrics[i].key] > b[metrics[i].key]) {
-    #                             return -1
-    #                         }
-    #                         if (a[metrics[i].key] < b[metrics[i].key]) {
-    #                             return 1
-    #                         }
-    #                     }
-    #                     }
-    #                 }
-    #             }
-    #         }
-    #         if (a.bracket_seed && !b.bracket_seed)
-    #             return -1;
-    #         if (!a.bracket_seed && b.bracket_seed)
-    #             return 1;
-    #         if (a.bracket_seed < b.bracket_seed)
-    #             return -1;
-    #         if (a.bracket_seed > b.bracket_seed)
-    #             return 1;
-    #         return 0;
-    #     });
-    #     return temp;
-    # }
+        # TODO - lots of things that could be added here, including primaries,
+        # secondaries, etc, but I think most of that is more relevant and
+        # useful in the pairings dataset.
+    ]]
 
-    return ps
+    return ps.copy()
 
 
 def get_kt_event_placings(eid: str, limit: int = 500, excl_dropped: bool = True) -> pd.DataFrame:
+    """
+    Return a `pd.DataFrame` of the placings for an event.
+    """
+
+    pds = get_kt_event_placing_sort_order(eid)
+
     params = {
         "eventId": eid,
         "inclEvent": "false",
 
         "inclMetrics": "true",
-        "metrics": json.dumps(["WHControlPoints", "battlePoints", "mfSwissPoints"]),
+        "metrics": json.dumps([pm.key for pm in pds]),
         "inclArmies": "true",
         "limit": limit
 
         # inclTeams
     }
 
-    pds = get_kt_event_placing_sort_order(eid)
     rj = bcp_request("players", params)
 
     return _kt_placings_df(rj, excl_dropped, pds)
+
+
+def _kt_placings_df(rj: list[dict[Any, Any]]) -> pd.DataFrame:
+    ps = pd.json_normalize(rj)
+
+    # un-mongo-ify the columns
+    ps.columns = [inflection.underscore(c) for c in ps.columns]
+
+    for p in ["player1", "player2"]:
+        ps = ps.rename(columns={
+            f"{p}.user_id": f"{p}_user_id",
+            f"{p}.army": f"{p}_army",
+
+            f"{p}.game.wh_control_points": f"{p}_game_primary_points",
+            f"{p}.game.game_number": f"{p}_game_number",
+            f"{p}.game.game_points": f"{p}_game_points",
+            f"{p}.game.game_result": f"{p}_game_result",
+            f"{p}.game.margin_of_victory": f"{p}_game_margin_of_victory"
+        })
+
+        ps[f"{p}_game_result_cat"] = ps[f"{p}_game_result"].map({
+            0: "loss",
+            1: "tie",
+            2: "win",
+        })
+
+    player_stats = [
+        "user_id",
+        "army",
+        "game_primary_points",
+        "game_number",
+        "game_points",
+        "game_result",
+        "game_result_cat",
+        "game_margin_of_victory",
+    ]
+
+    ps = ps[[
+            "event_id",
+            "round",
+        ] +
+        [f"player1_{s}" for s in player_stats] +
+        [f"player2_{s}" for s in player_stats]
+    ]
+
+    return ps.copy()
 
 
 def get_kt_event_pairings(eid: str, limit: int = 500) -> pd.DataFrame:
@@ -243,15 +245,15 @@ def get_kt_event_pairings(eid: str, limit: int = 500) -> pd.DataFrame:
         "limit": limit
     }
 
-    rj = requests.get("pairings", params=params)
+    rj = bcp_request("pairings", params=params)
 
-    return pd.json_normalize(rj)
+    return _kt_placings_df(rj)
 
 
 if __name__ == "__main__":
     evts = list_kt_events("2022-10-01", "2022-11-15", limit=10)
     eid = "SDauAbTSeh" # evts.event_obj_id.iloc[0]
-    eps = get_kt_event_placings(eid)
-    # eps = get_kt_event_pairings(eid)
+    # eps = get_kt_event_placings(eid)
+    eps = get_kt_event_pairings(eid)
 
     import pdb; pdb.set_trace()
