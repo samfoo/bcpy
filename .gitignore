@@ -1,6 +1,4 @@
 .ve/
 *.egg-info
 *.pyc
-*.csv
-*.parquet
 .ipynb_checkpoints

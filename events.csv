@@ -1,0 +1,426 @@
+event_date,started,ended,name,event_obj_id,number_of_rounds,total_players,checked_in_players,state,country
+2022-01-02T23:00:00.000Z,True,True,Conferencia Sanctus,lgsUx8LcDT,6,10,10,País Vasco,ES
+2022-01-02T23:02:00.000Z,True,True,Conferencia Nihilus,UmEUkuG9Ng,6,10,10,País Vasco,ES
+2022-01-08T10:00:00.000Z,True,True,Season 01: Blood In The Snow,u0GkR3PqDO,4,17,17,England,GB
+2022-01-09T09:00:00.000Z,True,True,Torneo KT W&M 09/01/2021,ZMHaGCX9hB,3,6,6,Andalucía,ES
+2022-01-10T11:00:00.000Z,True,True,Liga Zabijecích Týmu v Rubikonu #1,V9EAX5zfo0,4,14,14,Hlavní město Praha,CZ
+2022-01-14T20:00:00.000Z,True,True,Nocturno_14/01/22,rHmHDC7VjX,3,22,22,Comunidad de Madrid,ES
+2022-01-15T08:30:00.000Z,True,True,Torneo Kill Team DZ Santander Enero,HTQPJAEYMv,3,11,10,Cantabria,ES
+2022-01-15T15:30:00.000Z,True,True,Kill Team Jawn Presents: A Team To Kill ,AA7lMIul3G,4,13,10,New Jersey,US
+2022-01-16T07:45:00.000Z,True,True,V Torneo KT PW,h16P1eSTCh,3,9,9,Castilla y León,ES
+2022-01-16T08:00:00.000Z,True,True,RTT Athenea Enero,EbmTiUFUUi,3,10,8,Andalucía,ES
+2022-01-16T08:00:00.000Z,True,True,1° Torneo Valencia 2022,C2OPlKUH6y,3,18,18,Comunidad Valenciana,ES
+2022-01-16T09:00:00.000Z,True,True,RTT_16/01/22,CizFSzxGYl,3,18,18,Comunidad de Madrid,ES
+2022-01-16T09:15:00.000Z,True,True,2nd Great Cow Tournament,Qnqwfwmz18,4,18,18,Kharkivs'ka oblast,UA
+2022-01-17T10:00:00.000Z,True,True,Pepe Games Liga KT,vhMbYlObtu,4,8,8,Andalucía,ES
+2022-01-22T06:13:00.000Z,True,True,Test,7LmowMVnUb,1,4,4,Western Australia,AU
+2022-01-22T09:00:00.000Z,True,True,LEGENDS_22/01/22,ndf2rA9mGG,4,14,14,Comunidad de Madrid,ES
+2022-01-22T16:00:00.000Z,True,True,Gear Monthly Kill Team Tournament ,cTgBup4une,3,6,6,AR,US
+2022-01-23T08:00:00.000Z,True,True,Torneo KillTeam Torredembarra,CK2Ghl7ww1,3,10,10,CT,ES
+2022-01-28T18:00:00.000Z,True,True,LVO 2022 Kill Team Pod 1,e1D5ed2HnX,3,10,10,NV,US
+2022-01-28T18:00:00.000Z,True,True,LVO 2022 Kill Team Pod 2,cvD6E5McX7,3,8,8,NV,US
+2022-01-28T18:00:00.000Z,True,True,LVO 2022 Kill Team Pod 3,G3W9m4pEv3,3,10,10,NV,US
+2022-01-28T18:00:00.000Z,True,True,LVO 2022 Kill Team Pod 4,tu31psx1Hk,3,7,7,NV,US
+2022-01-29T09:10:00.000Z,True,True,7o Torneo Kill Team GTS,IIXe2o26Af,3,10,10,Catalunya,ES
+2022-01-29T09:30:00.000Z,True,True,Torneo Azkaban - 1r Torneo '22,ClwZWMqT3o,3,12,12,Comunidad de Madrid,ES
+2022-01-29T11:00:00.000Z,True,True,II Custo Torneo Kill Team,rLJhI3ooj3,3,6,6,Galicia,ES
+2022-01-29T18:00:00.000Z,True,True,Las Vegas Open 2022 Kill Team Championships,f05lIrEWU7,7,65,40,NV,US
+2022-01-30T04:00:00.000Z,True,True,Kill Team: After Dark Las Vegas Open,awDEwmQUmm,2,36,18,NV,US
+2022-01-30T08:10:00.000Z,True,True,"Test,",rMsPjxW8lL,1,1,1,Ульяновская область,RU
+2022-01-30T08:30:00.000Z,True,True,I Torneo RTT Agora Granada 2022,vkKM2nbLwB,3,18,16,Andalucía,ES
+2022-01-30T09:00:00.000Z,True,True,II Torneo Goblintrader Este ,dnUtudYNcl,3,10,10,Comunidad de Madrid,ES
+2022-01-30T10:00:00.000Z,True,True,Season 02: Cult Uprising,lWgj3vd5gu,4,19,19,England,GB
+2022-01-30T18:00:00.000Z,True,True,Kill Team Narrative Event Las Vegas Open 2022,pQEz4FUVZN,3,33,16,NV,US
+2022-01-30T21:00:00.000Z,True,True,Torneo Mensual KT Mallorca (Enero),t7qToEgAGo,3,8,8,Illes Balears,ES
+2022-02-04T23:00:00.000Z,True,True,Nocturno_Tuliestudio,ZZ06HH19ul,3,10,10,MD,ES
+2022-02-05T07:30:00.000Z,True,True,2do Torneo KILL TEAM AEPDA,40NVreUa1i,3,20,20,Catalunya,ES
+2022-02-05T16:00:00.000Z,True,True,Kill Team at Millennium Games,7SFSWa8A2m,3,8,7,NY,US
+2022-02-05T19:00:00.000Z,True,True,At Ease Kill Team February ,dHH1Cm8OLx,3,11,11,California,US
+2022-02-06T02:00:00.000Z,True,True,Kill Team League,n6kLI6JJW8,5,5,5,Western Australia,AU
+2022-02-06T08:00:00.000Z,True,True,Quest Kill Team Tournament @ Ludicamente,l4JwNv0pKY,4,6,6,Veneto,IT
+2022-02-06T08:30:00.000Z,True,True,KTA Febrero Antequera 2022,8a1N946Klx,3,11,10,Andalucía,ES
+2022-02-11T21:00:00.000Z,True,True,Nocturno_11/02/22,uxGAZBHCKE,3,20,20,Comunidad de Madrid,ES
+2022-02-12T20:30:00.000Z,True,True,IV Torneo Kill Team,8SKutVvsP8,3,16,16,Catalunya,ES
+2022-02-13T08:00:00.000Z,True,True,2° Torneo KT GTS Valencia,Z2EkzXGspa,3,24,24,Comunidad Valenciana,ES
+2022-02-13T08:30:00.000Z,True,True,III Torneo KillTeam Athenea Málaga ,KiSQ3ROcMR,3,10,8,Andalucía,ES
+2022-02-13T12:00:00.000Z,True,True,Kill Team Latvia turnīrs 03,4MPCk75mit,3,6,6,,LV
+2022-02-13T16:30:00.000Z,True,True,Magnus Canis I-22,M66B29Csr6,3,8,8,Canarias,ES
+2022-02-19T03:30:00.000Z,True,True,1er Torneo Kill Team Barcelona,bjSQT52KMb,3,10,10,Catalunya,ES
+2022-02-19T07:50:00.000Z,True,True,Torneo KT Murcia -19 De Febrero-,khO9OxaBFu,3,14,14,Región de Murcia,ES
+2022-02-19T08:00:00.000Z,True,True,Torneo Kill Team DZ Santander Febrero,0LOhmd9dc5,3,12,12,Cantabria,ES
+2022-02-19T09:15:00.000Z,True,True,Drop Zone : Reconnaissance,Q0FcAsYYEa,4,38,37,Mazowieckie,PL
+2022-02-19T13:00:00.000Z,True,True,Kill Team Open Championships,3wnpYbmHhv,8,63,59,MD,US
+2022-02-19T15:00:00.000Z,True,True,Pod 1 Kill Team Champs,rxzmk964RL,4,14,14,MD,US
+2022-02-19T15:00:00.000Z,True,True,Pod 2 Kill Team Champions,asFDAKO6CG,4,14,14,MD,US
+2022-02-19T15:00:00.000Z,True,True,Pod 3 Kill Team Champions,RHBvbEeABZ,4,14,14,MD,US
+2022-02-19T15:00:00.000Z,True,True,Pod 4 Kill Team Champions,4dw3sED7ac,4,17,17,MD,US
+2022-02-19T18:00:00.000Z,True,True,Kill Team Keep,owWTiBdpnb,3,3,3,New York,US
+2022-02-20T01:00:00.000Z,True,True,Kill Team Open After Dark Tournament,zDg7HXtFCR,3,38,36,MD,US
+2022-02-20T08:00:00.000Z,True,True,TDBWargames Torneo Torredembarra ,CnVLQBfd2j,3,10,10,CT,ES
+2022-02-20T08:00:00.000Z,True,True,Test,FKP50bhJlE,1,4,4,Ульяновская область,RU
+2022-02-20T09:00:00.000Z,True,True,GT_20/02/22,D6ThEMMq09,5,28,28,Comunidad de Madrid,ES
+2022-02-20T09:00:00.000Z,True,True,Pepe Games RTT,0fL9arxd0M,3,7,6,Andalucía,ES
+2022-02-20T09:00:00.000Z,True,True,Prueba Torneo Kill Team,cJLD6QQPfz,3,6,6,PV,ES
+2022-02-20T12:00:00.000Z,True,True,TL Killteam Córdoba ITC,JqyIk1eSIE,3,6,6,Córdoba,AR
+2022-02-20T13:00:00.000Z,True,True,Kill Team Open Narrative Event,QPBbP1B6Ax,3,35,29,MD,US
+2022-02-20T15:00:00.000Z,True,True,Kill Team Open Champions Final,AGAQRVn61R,4,16,16,MD,US
+2022-02-26T08:30:00.000Z,True,True,1r Torneig Homoludicus Kill Team,FPs8KTQz6D,3,9,9,Catalunya,ES
+2022-02-26T09:10:00.000Z,True,True,8o Torneo Kill Team GTS,2gMgtwf5et,3,10,10,Catalunya,ES
+2022-02-26T11:00:00.000Z,True,True,III Custo Torneo Kill Team,rSLCSa4ag0,3,12,12,Galicia,ES
+2022-02-27T08:00:00.000Z,True,True,II Torneo Agoracomic Febrero 2022,BeYhMFYsYO,3,15,14,Andalucía,ES
+2022-02-27T08:15:00.000Z,True,True,"Torneo Kill Team: ""Attack on Vicetia"" VICENZA",yTzrzqkoCt,4,8,7,Veneto,IT
+2022-02-27T09:00:00.000Z,True,True,III TORNEO KILL TEAM GTS ESTE ,o9GBMFosu7,3,6,6,Comunidad de Madrid,ES
+2022-03-05T08:15:00.000Z,True,True,I Torneo Killteam Joguines Pardo ,vUDHy5pyj3,3,10,10,Catalunya,ES
+2022-03-05T08:15:00.000Z,True,True,I GT Valladolid Kill Team,JXoRINzpI5,6,30,27,Castilla y León,ES
+2022-03-05T15:30:00.000Z,True,True,B.Strat Monthly KT 1,9YDxat1pze,3,12,10,New York,US
+2022-03-05T19:00:00.000Z,True,True,At Ease Killteam March,lgyC4FfU66,3,8,6,California,US
+2022-03-06T07:45:00.000Z,True,True,Torneo Iniciación Kill Team Sevilla,Hq3YZ8WJ3A,3,10,10,Andalucía,ES
+2022-03-06T08:00:00.000Z,True,True,3° Torneo Kill Team Valencia,XAT7WzcLnq,3,19,18,Comunidad Valenciana,ES
+2022-03-06T08:30:00.000Z,True,True,KTAntequera Marzo 2022,Kzq5BycraW,3,12,10,Andalucía,ES
+2022-03-09T07:00:00.000Z,True,True,Pepe Games Liga,jKjg5jGjKq,5,8,8,Andalucía,ES
+2022-03-12T09:00:00.000Z,True,True,Torneo Crítico Kill Team,tBA5Re2rty,4,17,17,MC,ES
+2022-03-12T09:00:00.000Z,True,True,Torneo Kill Team DZ Santander Marzo,RBiWohj3q3,3,7,7,Cantabria,ES
+2022-03-12T15:00:00.000Z,True,True,LTScum V Torneo KT,qmNNtpc38n,3,14,14,Catalunya,ES
+2022-03-13T12:00:00.000Z,True,True,TL Killteam Córdoba Marzo,3jQRe6Kmig,3,10,10,Córdoba,AR
+2022-03-13T16:30:00.000Z,True,True, Victory Gamer's KILL TEAM DAY,HDuGDlfV4D,3,8,8,Virginia,US
+2022-03-19T08:00:00.000Z,True,True,Campanas de la plaga 2022,3axAmH2CI0,4,34,34,CT,ES
+2022-03-19T08:30:00.000Z,True,True,KILLZONE: LA GUARIDA,QyPZD7WFKI,3,14,14,PV,ES
+2022-03-19T09:00:00.000Z,True,True,GT_19/03/22,NFJxjgXrY5,4,20,20,Comunidad de Madrid,ES
+2022-03-19T18:00:00.000Z,True,True,Myth March Kill Team Championship Prep Tournament ,lYevuFqEAu,3,3,3,TX,US
+2022-03-20T08:30:00.000Z,True,True,Torneo KillTeam Shark Games,IadauS8SmA,4,10,10,Andalucía,ES
+2022-03-20T10:00:00.000Z,True,True,LWG Compendium Clash (Kill Team Casual Event) ,RR7xIqMeGj,4,19,16,England,GB
+2022-03-20T10:00:00.000Z,True,True,Magnus Canis II-22,AUep3uGezr,3,6,6,Canarias,ES
+2022-03-24T13:00:00.000Z,True,True,Games Workshop- Adepticon 5 Round Kill Team Tournament ,ztpngDqsSH,5,31,20,IL,US
+2022-03-25T13:00:00.000Z,True,True,Games Workshop- Adepticon 5 Round Kill Team Tournament,m1BKqWHEpZ,5,36,27,IL,US
+2022-03-25T21:00:00.000Z,True,True,Nocturno_25/03/22,rC8kNiz8Ap,3,24,24,Comunidad de Madrid,ES
+2022-03-26T09:00:00.000Z,True,True,9o Torneo Kill Team GTSBarcelona,kKhVSB8jLX,3,10,10,Catalunya,ES
+2022-03-26T11:00:00.000Z,True,True,IV Custo Torneo Kill Team,hwgNUQCMeF,3,10,10,Galicia,ES
+2022-03-26T13:00:00.000Z,True,True,Koros Wargames: 2nd Annual March Mayhem ,KcBIf8sJjN,4,14,12,New Jersey,US
+2022-03-26T14:00:00.000Z,True,True,Geekz Haven Kill Team Tournament,5zTB3GeR0s,4,14,14,AL,US
+2022-03-26T19:00:00.000Z,True,True,Bay Area Open Prep Tournament,ugnc56KARd,4,15,14,CA,US
+2022-03-26T20:00:00.000Z,True,True,1er Torneo Kill Team,SDYw3v9I70,1,8,8,Comunidad de Madrid,ES
+2022-03-27T08:00:00.000Z,True,True,Kill Team: Granada - Torneo Mensual (Marzo 2022),Z8qmVPXTwE,3,12,12,AL,ES
+2022-03-27T08:00:00.000Z,True,True,IV Torneo Goblintrader Este,9HXgkk9KC1,3,14,14,Comunidad de Madrid,ES
+2022-03-27T14:00:00.000Z,True,True,Games Workshop- Adepticon Kill Team 3 Round Tournament,taM0FEl329,3,17,13,IL,US
+2022-04-02T08:00:00.000Z,True,True,Pepe Games KT GT ,hFuraIWFSA,3,9,8,Andalucía,ES
+2022-04-02T08:00:00.000Z,True,True,Magnus Canis III-22 ,Dawpjn7E6H,3,8,8,Canarias,ES
+2022-04-02T14:00:00.000Z,True,True,Kill Team Jawn's Warzone Aprilis: Team Classic,jI3k1W39r1,3,16,13,Pennsylvania,US
+2022-04-03T03:00:00.000Z,True,True,April League ,UTwmDgL1k0,4,9,7,Western Australia,AU
+2022-04-03T07:30:00.000Z,True,True,KILL TEAM Rubikon 3.4,hOiKItju0n,3,9,9,Hlavní město Praha,CZ
+2022-04-03T07:30:00.000Z,True,True,Kill Team Antequera 3 Abril,lfcC6i7pjl,3,12,12,Andalucía,ES
+2022-04-03T12:00:00.000Z,True,True,Torneo Héroes De Malvinas ,zvKDTBoRzS,3,10,10,Córdoba,Argentina
+2022-04-08T15:20:00.000Z,True,True,10o Torneo Kill Team GTSBarcelona,adv9ilzj98,2,4,4,Catalunya,ES
+2022-04-08T20:00:00.000Z,True,True,Nocturno_08/04/22,4mfbHTOBVc,3,16,16,Comunidad de Madrid,ES
+2022-04-09T08:00:00.000Z,True,True,Masters Of Hegemon - Test,QDVMDKkYba,1,10,10,Śląskie,PL
+2022-04-09T08:00:00.000Z,True,True,Masters Of Hegemon ,PaSjw5EGNQ,4,16,16,Śląskie,PL
+2022-04-09T08:00:00.000Z,True,True,Torneo Regional Valencia,Y0hHivx5oP,4,22,22,Comunidad Valenciana,ES
+2022-04-09T08:30:00.000Z,True,True,Season 04: Ancient Prophecy,nqs8oLnjht,4,22,22,England,GB
+2022-04-09T14:30:00.000Z,True,True,B.Strat Monthly KT 2,HhjUJ6OOsy,4,25,19,New York,US
+2022-04-10T03:30:00.000Z,True,True,Gear Monthly Kill Team Tournament,66nQNwF0qC,3,4,4,AR,US
+2022-04-10T06:45:00.000Z,True,True,VI Torneo Kill Team PW,OKOrmg9T8x,3,14,14,Castilla y León,ES
+2022-04-16T14:00:00.000Z,True,True,Vespertino_16/04/22,9anmZRnOY2,3,16,16,Comunidad de Madrid,ES
+2022-04-16T18:00:00.000Z,True,True,Myth Adventures LSO Prep,VfDXMJAisn,3,4,4,TX,US
+2022-04-17T06:30:00.000Z,True,True,Torneo Movidas de Nurgletes,QOmaVeAsKT,3,20,20,Andalucía,ES
+2022-04-17T07:00:00.000Z,True,True,TDBWARGAMES Torneo Torredembarra 17Abril,6E3KFP8lul,3,12,12,CT,ES
+2022-04-17T09:30:00.000Z,True,True,"Blood, Fire, Death",kax4vGT2sV,3,14,14,,RU
+2022-04-23T12:50:00.000Z,True,True,VICTORY GAMERS KILL TEAM TOURNAMENT ,7PgJun4glZ,4,19,19,Virginia,US
+2022-04-23T14:00:00.000Z,True,True,Spring Up GT - Kill Team Matched Play,TzdJftA2O6,4,24,22,MN,US
+2022-04-23T19:00:00.000Z,True,True,Bay Area Open Prep Tournament 2,LoI9bHJNnl,3,8,8,CA,US
+2022-04-24T06:45:00.000Z,True,True,Torneo Iniciación Kill Team Sevilla Abril '22,3pR9gIXlfD,3,14,14,Andalucía,ES
+2022-04-24T07:00:00.000Z,True,True,Asgard #2,4C2m8zSBGH,3,12,12,Normandie,FR
+2022-04-24T07:30:00.000Z,True,True,Kill Team Tournament @ Ludicamente,HpJkebXuDo,3,6,6,Veneto,IT
+2022-04-24T07:30:00.000Z,True,True,Kill Team: Granada - Torneo Mensual (Abril 2022),uXCncdm2Qk,3,16,14,AN,ES
+2022-04-24T08:00:00.000Z,True,True,GT_24/04/22,8GdWKIjUD4,4,27,27,Comunidad de Madrid,ES
+2022-04-26T23:30:00.000Z,True,True,Test1234,mYVpwGgalM,4,24,24,Minnesota,US
+2022-04-29T09:00:00.000Z,True,True,May League,lWHMeJJE0d,4,11,10,Western Australia,AU
+2022-04-30T06:00:00.000Z,True,True,Torneo Rookie Abril,eE4b5dA37P,3,6,6,MC,ES
+2022-04-30T07:00:00.000Z,True,True,Torneo Kill Team DZ Santander Abril,awb9HEgP9E,3,14,14,Cantabria,ES
+2022-04-30T08:00:00.000Z,True,True,LTScum Gran Torneo,TZfp0ZBDYy,4,19,19,Catalunya,ES
+2022-04-30T08:00:00.000Z,True,True,Agora Cómic 30 Abril 2022 Dia De La Madre Evento Gratuito,4rdBGNNcxW,3,10,6,Andalucía,ES
+2022-04-30T08:15:00.000Z,True,True,Kill Team Turniej Strefowy,8kiWViopNl,3,6,6,Śląskie,PL
+2022-04-30T10:00:00.000Z,True,True,V Custo Torneo Kill Team,SzRJllmuja,3,10,10,Galicia,ES
+2022-04-30T17:00:00.000Z,True,True,Rune And Board Kill Team 1,7Kx7V8EZ7i,3,10,10,Oregon,US
+2022-04-30T18:00:00.000Z,True,True,Comic Quest Kill Team Tournament,qQzOVF61LL,3,8,8,California,US
+2022-05-01T16:15:00.000Z,True,True,Just Games Kill Team April RTT,5OysJWHnKS,3,11,10,NY,US
+2022-05-07T07:00:00.000Z,True,True,Tac Ops AB,bgnwW5qMMI,3,6,6,Bayern,DE
+2022-05-07T07:00:00.000Z,True,True,4° Torneo De KT Valencia,RMEykHy2lL,3,16,16,Comunidad Valenciana,ES
+2022-05-07T07:30:00.000Z,True,True,I Gran Torneo KillTeam Pizarra ,AKGFloZBkO,3,9,6,Andalucía,ES
+2022-05-07T08:00:00.000Z,True,True,II-MAJOR-MADRID_07/05/22,sE4fkfwDb5,5,50,50,Comunidad de Madrid,ES
+2022-05-07T09:00:00.000Z,True,True,Season 05: Chaos Reign,okCoTDqwJQ,4,16,16,England,GB
+2022-05-07T14:30:00.000Z,True,True,Gritty Goblin Kill Team Tourney,1E0H4V4D03,3,13,10,MD,United States
+2022-05-07T14:30:00.000Z,True,True,B.Strat May Monthly KT,hZffMzrBqG,4,15,14,New York,US
+2022-05-07T16:00:00.000Z,True,True,US Open Seattle Kill Team Grand Tournament,VFf2DgS98S,5,19,19,WA,US
+2022-05-09T12:53:00.000Z,True,True,Liga Zabíjackych Týmu 2.5,xoQd2cl9fN,4,14,14,Hlavní město Praha,CZ
+2022-05-13T09:00:00.000Z,True,True,Torneo Exhibición KT Pucela Wargames,dIMGlewGuc,3,4,4,Castilla y León,ES
+2022-05-14T07:30:00.000Z,True,True,TEAM KILL,HFFxYeZHjf,4,42,42,Catalunya,ES
+2022-05-14T08:30:00.000Z,True,True,Magnus Canis IV-22,OolpOeJPro,3,10,10,Canarias,ES
+2022-05-14T09:00:00.000Z,True,True,As Honour Demands - Tabletop Republic,4Al5EEnmN7,3,12,12,England,United Kingdom
+2022-05-14T15:30:00.000Z,True,True,Gear Monthly Kill Team Tournament - May,wfFWvfoXDT,3,9,9,AR,US
+2022-05-15T07:00:00.000Z,True,True,I Ordo Molleticus Kill Team War&Magic Store,cEhr4bvyFy,3,9,8,Andalucía,ES
+2022-05-15T07:30:00.000Z,True,True,1° Torneo Kill Team Vulcania,jXDGJwMWcb,3,8,8,Andalucía,ES
+2022-05-15T13:30:00.000Z,True,True,Motor City Mayhem  2022 Sunday Kill Team Event  ,DHrkYKOEed,3,10,8,Michigan,US
+2022-05-18T07:00:00.000Z,True,True,Kill Team Warzone Orleans,Ou1nrsqTIz,4,8,8,Centre-Val de Loire,FR
+2022-05-20T20:00:00.000Z,True,True,Nocturno_20/05/22,BmPwdhAevG,3,14,14,Comunidad de Madrid,ES
+2022-05-21T06:16:00.000Z,True,True,DropZone : Infiltration DAY 1,YzIZf5Xhhu,4,36,36,Mazowieckie,PL
+2022-05-21T07:00:00.000Z,True,True,KT Bandua ITC 21/05/22,s1vvFdnfNP,4,8,8,Galicia,ES
+2022-05-21T09:00:00.000Z,True,True,Nachmund: The War Within,xh6XjMVL2x,4,33,29,England,GB
+2022-05-21T14:00:00.000Z,True,True,Kill Team Alicatan,V5iThi6H44,4,6,6,Región Metropolitana,CL
+2022-05-21T16:50:00.000Z,True,True,VICTORY GAMERS' KILL TEAM TOURNAMENT ,AbS3CQrYjb,3,8,8,Virginia,US
+2022-05-21T18:00:00.000Z,True,True,Torneo Revolución ,prvZiNiePS,5,16,16,Córdoba,Argentina
+2022-05-22T06:05:00.000Z,True,True,DropZone : Infiltration DAY 2,Fwkrg2HjLd,4,28,28,Mazowieckie,PL
+2022-05-22T15:30:00.000Z,True,True,PepeGames KT,GSZ38VJoQs,3,9,6,Andalucía,ES
+2022-05-22T16:00:00.000Z,True,True,Kill Team Tournament - Adeptus Michiganicus,xXhl9GBPJx,3,18,18,MI,US
+2022-05-27T17:00:00.000Z,True,True,Kill Team Narrative Event Bay Area Open,zG4nKZnwh5,3,9,9,CA,US
+2022-05-28T07:00:00.000Z,True,True,Saint-Petersburg Kill Team Championship 2022,6GCDyJeGxQ,4,24,24,,RU
+2022-05-28T07:00:00.000Z,True,True,Torneo Kill Team DZ Santander Mayo,MSMI7WFxQG,3,12,12,Cantabria,ES
+2022-05-28T08:22:00.000Z,True,True,Azkaban - 3r Torneo Azkaban,drbIXghKmg,3,9,8,Comunidad de Madrid,ES
+2022-05-28T10:00:00.000Z,True,True,VI Custo Torneo Kill Team,iyOLLkbTAq,3,14,14,Galicia,ES
+2022-05-28T14:30:00.000Z,True,True,Skill Team: First Class,lNnxjvvjMo,3,9,8,New Jersey,US
+2022-05-28T17:00:00.000Z,True,True,Bay Area Open Kill Team Championships,275OBOEOlf,6,19,12,CA,US
+2022-05-28T17:00:00.000Z,True,True,Strategicon - GAMEX 2022 Kill Team GT,1lcF1FP4Eq,4,8,8,California,US
+2022-05-28T18:00:00.000Z,True,True,Myth Adventures LSO Prep May ,9DSH3o0Hk6,3,3,3,TX,US
+2022-05-28T19:00:00.000Z,True,True,FTW Kill Team Tournament,yzXSpzkSkF,3,6,6,AL,US
+2022-05-29T06:45:00.000Z,True,True,Torneo Iniciación Kill Team Sevilla Mayo,98Ide5hMR5,3,8,8,Andalucía,ES
+2022-05-29T07:30:00.000Z,True,True,Kill Team: Granada - Torneo Mensual (Mayo 2022),7Y84lwCF7t,3,20,19,AN,ES
+2022-05-29T08:00:00.000Z,True,True,JUGARXJUGAR 2022,GuCpnKhU3d,4,14,13,Catalunya,ES
+2022-05-29T12:00:00.000Z,True,True,KT turnīrs 4,abtxxxWvPA,3,8,8,,LV
+2022-05-29T18:00:00.000Z,True,True,Alberta Classic Kill Team Tournament ,GACWKIFIdB,3,8,8,Alberta,CA
+2022-06-03T17:00:00.000Z,True,True,Wargamescon Friday Kill Team,AqSd4hppGX,3,11,11,Texas,US
+2022-06-03T20:00:00.000Z,True,True,Nocturno_03/06/22,WAL361RD9V,3,10,10,Comunidad de Madrid,ES
+2022-06-04T08:00:00.000Z,True,True,KTF & Co Addict 1,5oI6OuicFF,5,22,22,Grand Est,FR
+2022-06-04T08:00:00.000Z,True,True,Kill Team: Critical Strike ,ixQlgsiBax,3,40,40,England,GB
+2022-06-04T14:30:00.000Z,True,True,B.Strat June Monthly KT,muFX0ABBtI,3,15,15,New York,US
+2022-06-04T18:00:00.000Z,True,True,Kill Team Tournament ,QFiblrzwyn,3,11,10,New Mexico,US
+2022-06-05T06:30:00.000Z,True,True,MDN Torneo Mensual,jL1hr8NECI,3,10,10,Andalucía,ES
+2022-06-05T07:00:00.000Z,True,True,Campanas De La Plaga Summer Edition 2022,VguL1PMvIO,4,26,26,CT,ES
+2022-06-05T07:00:00.000Z,True,True,5° Torneo Rokies ,KzrBbPyEqq,3,16,16,Comunidad Valenciana,ES
+2022-06-11T09:00:00.000Z,True,True,EvilDice Moscow Normal ,aGETQ7HpyY,3,20,20,,RU
+2022-06-11T09:00:00.000Z,True,True,I Torneo de Kill Team,1Yw9cQRHZa,3,16,16,Galicia,ES
+2022-06-11T12:00:00.000Z,True,True,ACO Kill Team Championships,UiHjBvrJnU,6,26,22,NJ,US
+2022-06-11T14:00:00.000Z,True,True,Kill Team Alicatan junio,FcpQSLc8KN,3,4,4,Región Metropolitana,CL
+2022-06-11T15:20:00.000Z,True,True,Prueba,CQe5CGNYqf,3,4,4,Comunidad Valenciana,ES
+2022-06-11T17:00:00.000Z,True,True,Kill Team Monthly - June,XBd5u40tNB,3,3,3,AR,US
+2022-06-11T17:00:00.000Z,True,True,Squad Games June GT,oENC9qx3eI,3,8,8,California,US
+2022-06-11T20:00:00.000Z,True,True,Batalla Por El Reino,CYvmi2ykWW,4,33,33,Comunidad de Madrid,ES
+2022-06-12T06:45:00.000Z,True,True,VII Torneo Kill Team PW,VTUBwJ3tSt,3,14,12,Castilla y León,ES
+2022-06-12T07:30:00.000Z,True,True,Kill Team Jaén - 1° Torneo KT Ludus Alea,74BfqUz9ii,3,6,6,Andalucía,ES
+2022-06-12T16:00:00.000Z,True,True,June KT Tournament @ Golden Rhino Games - Adeptus Michiganicus,l61Pi3g4DR,1,14,14,MI,US
+2022-06-18T04:00:00.000Z,True,True,Kill Team Manila,DCxR6TzTOD,3,12,12,Metro Manila,PH
+2022-06-18T07:00:00.000Z,True,True,Magic BoardGames Fest,N4O2orD9dH,3,14,14,Comunidad Valenciana,ES
+2022-06-18T07:00:00.000Z,True,True,Torneo Kill Team DZ Santander Junio,EXm1OrBcul,3,10,10,Cantabria,ES
+2022-06-18T07:10:00.000Z,True,True,I Killteam Battlebunker ,ZstwndTzdd,3,8,8,Euskadi,ES
+2022-06-18T08:30:00.000Z,True,True,II Torneo Kill Team Ourense,nlBIs5IG1C,3,8,8,Galicia,ES
+2022-06-18T08:30:00.000Z,True,True,Pre-GT / Torneo ITC en azkaban,oXWRGM5ADi,3,14,14,Comunidad de Madrid,ES
+2022-06-18T09:11:00.000Z,True,True,Torneo,H55pILJIMb,3,7,7,Lombardia,IT
+2022-06-18T14:15:00.000Z,True,True,LTScum VI Kill Team,ff9KYT89F2,3,8,8,Catalunya,ES
+2022-06-19T07:00:00.000Z,True,True,Conquest - Nachmund 22,BIGgN70ScO,3,6,6,Lazio,IT
+2022-06-19T07:00:00.000Z,True,True,V Torneo Kill Team TDBWargames ,M4YChwl4qX,3,10,10,CT,ES
+2022-06-19T08:00:00.000Z,True,True,GT_19/06/22,8ENEufZa1b,4,18,18,Comunidad de Madrid,ES
+2022-06-19T08:00:00.000Z,True,True,Kill Team: Critical Strike ,OWZON6xp9i,3,50,50,England,GB
+2022-06-24T20:00:00.000Z,True,True,Torneo Nocturno Kill Team Sevilla Junio,sSDiSgRTyV,3,8,8,Andalucía,ES
+2022-06-25T07:30:00.000Z,True,True,Civis KT,rSRLeLcrcp,3,10,6,,HU
+2022-06-25T08:00:00.000Z,True,True,Mgc,JSp42ElN4O,4,16,15,Mazowieckie,PL
+2022-06-25T10:00:00.000Z,True,True,VII Custo Torneo KT,m9sbMDHHcN,3,15,15,Galicia,ES
+2022-06-25T12:30:00.000Z,True,True,Golden Store Roma Killteam,lIbvVezj4b,3,6,6,Lazio,IT
+2022-06-25T18:00:00.000Z,True,True,Arqueotorneo,963CzfCBVO,3,8,8,Córdoba,Argentina
+2022-06-26T07:30:00.000Z,True,True,Kill Team: Granada - Torneo Mensual (Junio 2022),JLuDppaRdv,3,12,12,AN,ES
+2022-06-30T14:00:00.000Z,True,True,GC Killteam League 6/30-9/8,PUFDLrl52D,5,11,11,MD,US
+2022-07-02T06:30:00.000Z,True,True,III Torneo KILL TEAM AEPDA,4OcTnPt5Sd,3,12,12,Catalunya,ES
+2022-07-02T07:00:00.000Z,True,True,Torneo Nacional Valencia,Omqnm0847I,7,36,36,Comunidad Valenciana,ES
+2022-07-02T15:00:00.000Z,True,True,Gritty Goblin Kill Team Tourney 2,nwByVlgsrj,3,13,8,MD,United States
+2022-07-02T19:00:00.000Z,True,True,Kill Team: Narrative - Games Of Berkeley,bTEjBd69U9,3,9,9,CA,US
+2022-07-03T07:00:00.000Z,True,True,1° POD Nacional Valencia,RjUWCkcarG,3,10,10,Comunidad Valenciana,ES
+2022-07-03T07:00:00.000Z,True,True,2° POD Nacional Valencia,hy6aRCgEaY,3,10,10,Comunidad Valenciana,ES
+2022-07-09T08:00:00.000Z,True,True,KTBB: The Last Kommando,iijomHcUnO,4,18,18,Śląskie,PL
+2022-07-09T14:30:00.000Z,True,True,B.Strat July Monthly KT,N7vbkGpnlI,4,19,18,New York,US
+2022-07-09T15:00:00.000Z,True,True,Alicatan 9 De Julio,ZlV3qjcwni,3,6,6,Región Metropolitana,CL
+2022-07-09T18:00:00.000Z,True,True,Comic Quest Kill Team Tournament July 2022,MBsb4A2M7l,3,6,6,California,US
+2022-07-10T07:00:00.000Z,True,True,Torneo Mensual MDN Kill Team,w8pqvZiVq3,3,8,8,Andalucía,ES
+2022-07-10T08:00:00.000Z,True,True,GT_10/07/22,iDjSWyYHic,4,32,32,Comunidad de Madrid,ES
+2022-07-10T09:00:00.000Z,True,True,KILL TEAM SUMMER TOURNAMENT,bFyZ49GER3,3,10,10,Veneto,IT
+2022-07-15T14:00:00.000Z,True,True,Torneo Rookie Kill Team Murcia,cxcLdOSb6n,3,18,18,MC,ES
+2022-07-16T06:30:00.000Z,True,True,I Torneo KT El Dragón Rojo,zUF2n54R4O,3,12,12,Andalucía,ES
+2022-07-16T08:30:00.000Z,True,True,Season 07: Pariah Nexus,w3OAfcXGQ3,4,22,22,England,GB
+2022-07-16T14:30:00.000Z,True,True,Kill Zone: NOVA,L17YyfhlHV,4,15,12,Virginia,US
+2022-07-16T17:00:00.000Z,True,True,KILLZONE - SIN CITY,bQRq8wT9sA,4,12,12,Nevada,US
+2022-07-16T17:00:00.000Z,True,True,Squad Games Kill Team July Gt,6LKJ8uRJ2G,4,10,10,California,US
+2022-07-17T07:00:00.000Z,True,True,VI Torneo Kill Team TDBWargames ,XjYgFF8KGL,3,14,14,CT,ES
+2022-07-17T08:30:00.000Z,True,True,Azkaban KT - Torneo Julio '22,aDV6pDELML,3,14,14,Comunidad de Madrid,ES
+2022-07-17T12:00:00.000Z,True,True,Torneo Independencia ,hafAsB4IVx,4,10,10,Córdoba,Argentina
+2022-07-22T15:30:00.000Z,True,True,FNT KT 22'07'22,3I7bHne2qV,2,10,10,,RU
+2022-07-23T07:00:00.000Z,True,True,La IV Cabra Norteña,tph6L17XS5,5,48,48,Cantabria,ES
+2022-07-23T10:00:00.000Z,True,True,Manchester Kill Team: The King In The North ,Nf57EX8CGr,3,16,16,England,GB
+2022-07-23T14:00:00.000Z,True,True,7/23 Geekz Haven RTT,JCdZ0Uc5y6,4,10,8,AL,US
+2022-07-23T14:00:00.000Z,True,True,Lone Star Open Kill Team 2022,ZrH9KRUcqO,9,10,10,TX,US
+2022-07-23T19:00:00.000Z,True,True,For The Win Kill Team Tournament July 2022,F72wiKNO1U,3,4,3,AL,US
+2022-07-24T09:00:00.000Z,True,True,KT HG SD July,ToWZbbYrCg,3,16,16,,RU
+2022-07-24T12:00:00.000Z,True,True,Warbands In The Infinite Museum,ddG4XwVgsP,3,6,6,,LV
+2022-07-29T20:00:00.000Z,True,True,Nocturno_29/07/22,SnXZMr2ezX,3,24,24,Comunidad de Madrid,ES
+2022-07-30T07:30:00.000Z,True,True,LTScum Gran Torneo,EiIfQML1TC,4,18,18,Catalunya,ES
+2022-07-30T08:00:00.000Z,True,True,Vanaheim.pl: III Turniej Kill Team ,jy9s9wnwUF,4,26,26,Małopolskie,PL
+2022-07-30T10:00:00.000Z,True,True,VIII Custo Torneo Kill Team,5OGNpNLGzv,3,16,16,Galicia,ES
+2022-07-30T15:00:00.000Z,True,True,Chill Team Open Casual Tournament- Tri-Cities TN,s4N0hLFHca,3,9,8,TN,US
+2022-07-30T16:30:00.000Z,True,True,Just Games Kill Team July RTT,6lMs27Od8D,3,6,6,NY,US
+2022-07-30T20:00:00.000Z,True,True,I Torneo Kill Team TDBWargames Nocturno,s27d9PixtN,3,14,14,CT,ES
+2022-07-31T07:00:00.000Z,True,True,Torneo KT Mallorca,o0X73IH8Pm,4,8,8,Illes Balears,ES
+2022-07-31T07:00:00.000Z,True,True,6° Torneo Rokies,e9ByfYvAcu,3,16,16,Comunidad Valenciana,ES
+2022-07-31T15:30:00.000Z,True,True,1er Torneo Kill Team Ceuta,MxpY1yz7II,3,8,8,Ceuta,ES
+2022-07-31T16:00:00.000Z,True,True,Kill Team tournament Season 1 Finale,ShCBvnkCEU,3,22,22,MI,US
+2022-08-05T12:00:00.000Z,True,True,GenCon Kill Team Tournament - Friday,XhHCrRwUyn,3,12,12,IN,United States
+2022-08-05T23:00:00.000Z,True,True,Houston KT: Friday Night Fight!,z3SykiFx6A,3,7,7,Texas,US
+2022-08-06T08:30:00.000Z,True,True,II Torneo Kill Team La Fortaleza,nDd3Ddd8NX,3,15,14,Galicia,ES
+2022-08-06T09:00:00.000Z,True,True,As Honour Demands II - Tabletop Republic,YApDHJcyOk,3,12,12,England,United Kingdom
+2022-08-06T09:30:00.000Z,True,True,August Duos,L9CPFYHkMv,3,8,8,England,GB
+2022-08-06T12:00:00.000Z,True,True,GenCon Kill Team Tournament - Saturday,gBtlJOqLIl,3,11,10,IN,United States
+2022-08-06T14:30:00.000Z,True,True,B.Strat August Monthly KT: Terrain Silliness,qOjhaCSvuE,3,17,16,New York,US
+2022-08-07T07:00:00.000Z,True,True,VII Torneo Kill Team TDBWARGAMES,uBw5G8vdSr,3,14,14,CT,ES
+2022-08-07T08:00:00.000Z,True,True,AT SPb KT 07'08'22,1XeQzN9ldZ,4,8,8,,RU
+2022-08-07T12:00:00.000Z,True,True,GenCon Kill Team Tournament - Sunday,P3WrP73gUU,3,8,7,IN,United States
+2022-08-12T15:00:00.000Z,True,True,FNT KT 12'08'22,MludwCi25Y,2,10,10,,RU
+2022-08-12T20:00:00.000Z,True,True,Nocturno_12/08/22,JT3FACBA5N,3,20,20,Comunidad de Madrid,ES
+2022-08-13T06:30:00.000Z,True,True,II TORNEO Kill Team El Dragón Rojo ,ottAHZLkQ5,3,9,9,Andalucía,ES
+2022-08-13T08:10:00.000Z,True,True,Matisoft Gaming Club ,Y3HBOFzVCD,4,10,10,Mazowieckie,PL
+2022-08-13T09:00:00.000Z,True,True,Leicester Killteam August Tournament,Erpk3lRKcz,3,8,8,England,GB
+2022-08-13T14:00:00.000Z,True,True,Plasma Spam Invitational ,oewFRFhZKS,4,20,20,MD,US
+2022-08-13T17:00:00.000Z,True,True,Iniciación Al Bien Supremo,G6DLlaSy6W,3,6,6,Córdoba,AR
+2022-08-13T17:00:00.000Z,True,True,Squad Games August GT,8AiWu1MTJi,4,10,10,California,US
+2022-08-14T00:00:00.000Z,True,True,Dice Arcade THRILL TEAM Competitive,AJpEp8CPIA,3,14,13,NSW,AU
+2022-08-14T07:00:00.000Z,True,True,Kill Team: Granada - Torneo Mensual (Julio 2022),04ve0OykVK,3,10,10,AN,ES
+2022-08-14T07:00:00.000Z,True,True,KILLZONE: LA GUARIDA,OJNrA4blAi,3,10,10,PV,ES
+2022-08-14T16:00:00.000Z,True,True,Compendium Only Tournament ,oei2YeFLv2,1,14,14,MI,US
+2022-08-14T16:00:00.000Z,True,True,Compendium Only Tournament ,ourbSl295O,3,14,14,MI,US
+2022-08-20T19:00:00.000Z,True,True,KILL TEAM: August 20,ImWxultQQb,3,7,6,California,US
+2022-08-20T20:00:00.000Z,True,True,II Torneo Kill Team TDBWargames Nocturno,q8PCndGHzY,3,10,10,CT,ES
+2022-08-20T20:00:00.000Z,True,True,Torneo Nocturno Kill Team Sevilla Agosto,RH9YV1rgEg,3,8,8,Andalucía,ES
+2022-08-21T07:00:00.000Z,True,True,Torneo Rokies Agosto,XajGvQqPpF,3,12,12,Comunidad Valenciana,ES
+2022-08-21T08:00:00.000Z,True,True,GT_21/08/22,vcrALKqHzp,4,27,27,Comunidad de Madrid,ES
+2022-08-21T10:00:00.000Z,True,True,The King in the North,5paNV5mtYo,3,12,12,England,GB
+2022-08-24T07:00:00.000Z,True,True,Miniacs Clash - Kill Team Tournament,iFTgTy5vG9,4,14,14,Lazio,IT
+2022-08-26T08:00:00.000Z,True,True,KTBB: A Dance with Novitiates,qXvVnT5oPS,4,16,16,Śląskie,PL
+2022-08-27T07:30:00.000Z,True,True,Torneo Kill Team DZ Santander Agosto,IUe1UclW9s,3,20,20,Cantabria,ES
+2022-08-27T07:30:00.000Z,True,True,LTScum VII Torneo Kill Team ,F24mEUQO4f,3,12,12,Catalunya,ES
+2022-08-27T08:00:00.000Z,True,True,KTBB: A Dance with Novitiates the Sequel,2pq7L6VUQe,4,15,15,Śląskie,PL
+2022-08-27T08:00:00.000Z,True,True,Segundo Torneo Crítico ,tbbv83UkMW,4,7,7,MC,ES
+2022-08-27T08:30:00.000Z,True,True,NeIgry KT Tournament August,kkXhqILWrO,3,8,8,,RU
+2022-08-27T09:30:00.000Z,True,True,Kill Team Agosto La Forja,GzjQVdQFkF,3,12,12,Galicia,ES
+2022-08-28T07:00:00.000Z,True,True,Kill Team: Granada - Torneo Mensual (Agosto 2022),8RL8YYbW3E,3,14,12,AN,ES
+2022-08-28T07:00:00.000Z,True,True,Torneo Kill Team Con-quest,jOTbSStHXf,4,14,14,Lombardia,IT
+2022-08-28T09:30:00.000Z,True,True,KT HG SD August,Dv56cf8NXN,3,12,12,,RU
+2022-08-28T12:00:00.000Z,True,True,Invitacional De Killteam ,lMy2zwcMz5,3,8,8,Córdoba,Argentina
+2022-08-28T12:00:00.000Z,True,True,KTLV Turnīrs 05 | VantageSlam,IYzZYis5oz,3,6,6,,LV
+2022-09-01T13:30:00.000Z,True,True,Kill Team NOVA 2022 Casual Pods 1,bPgHgcUexe,4,13,13,Virginia,US
+2022-09-01T13:30:00.000Z,True,True,Kill Team NOVA 2022 Casual Pods 2,leRO1wglHq,4,12,12,Virginia,US
+2022-09-01T15:30:00.000Z,True,True,Kill Team NOVA 2022 Casual Pods 3,lZtE4soA1d,3,5,5,Virginia,US
+2022-09-03T07:45:00.000Z,True,True,VIII Torneo KT PW,EMTJvHYqgN,4,14,14,Castilla y León,ES
+2022-09-03T13:00:00.000Z,True,True,Nova Open Kill Team Grand Tournament,PIo0k8ieoJ,7,42,42,Virginia,US
+2022-09-03T14:30:00.000Z,True,True,DWG Kill Team Sept 3rd 2022,040YoxES9I,3,8,8,Georgia,US
+2022-09-03T15:00:00.000Z,True,True,STL Kill Team Open,92L6ixEzKZ,3,15,15,MO,US
+2022-09-03T18:00:00.000Z,True,True,Strategicon - Gateway 2022 Kill Team GT,eXEdXUTLfw,5,12,12,California,US
+2022-09-04T07:00:00.000Z,True,True,Torneo Rokies Septiembre,UpF1cCXDmq,3,14,14,Comunidad Valenciana,ES
+2022-09-04T07:00:00.000Z,True,True,MDN Summer Kill Team Time,AXycFcKYMt,3,12,12,Andalucía,ES
+2022-09-04T07:30:00.000Z,True,True,SANTIAGO - KILL THE XENOS V.1,sG5aL9o4WV,3,20,20,GA,ES
+2022-09-04T09:00:00.000Z,True,True,The King In The North - Element Legends,wA2YM7CYJL,4,20,20,England,GB
+2022-09-04T12:30:00.000Z,True,True,Mournival Servant 2022,ud1xyYXMXb,3,10,10,Catalunya,ES
+2022-09-09T15:30:00.000Z,True,True,FNT KT 09'09'22,vi2oXGhMzF,2,12,12,,RU
+2022-09-10T06:30:00.000Z,True,True,III TORNEO KILL TEAM El Dragón Rojo ,FHwSwzXYef,3,6,6,Andalucía,ES
+2022-09-10T07:00:00.000Z,True,True,Kill Team Wars 2022,yOT9eBNX6p,4,38,38,Comunidad de Madrid,ES
+2022-09-10T08:00:00.000Z,True,True,Lokalny Turniej KT Kraków ,XfXaM1NUWA,3,14,14,Małopolskie,PL
+2022-09-10T08:48:00.000Z,True,True,12 Torneo Kill Team GTS Barcelona ,6sZxccxl2E,3,7,7,Catalunya,ES
+2022-09-10T14:00:00.000Z,True,True,Kill Team Jawn’s Back To School Special!,8slD2HueBu,3,6,5,Pennsylvania,US
+2022-09-10T15:00:00.000Z,True,True,B.Strat September Monthly KT,wSXBieCeEC,3,10,10,New York,US
+2022-09-10T15:00:00.000Z,True,True,September Kill Team Tournament,tCfEuv5BEt,3,7,6,IL,United States
+2022-09-10T17:00:00.000Z,True,True,No Kill Team,AizoHEYxHf,3,8,8,Texas,US
+2022-09-10T17:00:00.000Z,True,True,Waystone Kill Team Tournament,4SgsMgDJgF,3,12,12,WA,US
+2022-09-10T21:00:00.000Z,True,True,Squad Games September GT,aDay1saNaD,3,12,12,California,US
+2022-09-11T16:30:00.000Z,True,True,SoC September Tournament,WIBJB4OSjT,3,6,6,Michigan,US
+2022-09-17T04:00:00.000Z,True,True,Kill Team Manila 2,VlcQrHTfpG,3,12,12,Metro Manila,PH
+2022-09-17T06:00:00.000Z,True,True,"Tac Ops AB, Sept22",L6wTsALX4n,4,8,8,Bayern,DE
+2022-09-17T08:30:00.000Z,True,True,Kill Team Septiembre La Forja,awb0Ind95h,3,8,8,Galicia,ES
+2022-09-17T13:30:00.000Z,True,True,VICTORY GAMERS' KILL TEAM TOURNAMENT ,ju2l1wsPvY,3,12,12,Virginia,US
+2022-09-17T14:00:00.000Z,True,True,Skill Team: Back To Skill,6im2VEiBoA,3,10,10,New Jersey,US
+2022-09-17T14:00:00.000Z,True,True,LTScum VIII Torneo Kill Team,34MyvImObr,3,6,6,Catalunya,ES
+2022-09-17T20:30:00.000Z,True,True,MAGNUS CANIS V-22,XNaE31B4t7,3,7,7,Canarias,ES
+2022-09-18T08:00:00.000Z,True,True,LUDICAMENTE KILL TEAM CONQUEST,UVXqADUatK,3,10,10,Veneto,IT
+2022-09-18T08:00:00.000Z,True,True,GT_18/09/22,KAxOqGICDF,4,19,19,Comunidad de Madrid,ES
+2022-09-18T09:00:00.000Z,True,True,Wild Autumn Wind,ISNwKIbn91,3,14,14,,RU
+2022-09-18T15:30:00.000Z,True,True,RTT Escuadrón Zaragoza Septiembre,7fHvUL2ulS,3,12,12,Puebla,MX
+2022-09-19T15:00:00.000Z,True,True,Atomic Kill Team Season 3 Tournament ,ZHQ7vtzFUX,4,15,15,TX,US
+2022-09-19T17:00:00.000Z,True,True,KILLTEAM GS SEP 2022,sR6zFIkC3i,3,6,6,CDMX,MX
+2022-09-24T00:00:00.000Z,True,True,Dirty Dozen V,n9JJQFdCBD,4,12,10,神奈川県,JP
+2022-09-24T08:00:00.000Z,True,True,DropZone CORONATION,LKauzyMfUr,6,55,52,Mazowieckie,PL
+2022-09-24T08:00:00.000Z,True,True,Carcosa Fiestas Buenavista,LWMxM123E8,4,13,10,Comunidad de Madrid,ES
+2022-09-24T08:30:00.000Z,True,True,V Magnus Canis Vol.2,G7QZFOuOa6,3,6,6,CN,ES
+2022-09-24T10:00:00.000Z,True,True,IX Custo Torneo Kill Team,Eel1RPLJww,3,20,20,Galicia,ES
+2022-09-24T10:02:00.000Z,True,True,Golden Store Talenti Killteam,MzwC6Sbwbb,3,6,6,Lazio,IT
+2022-09-24T15:30:00.000Z,True,True,Authentic Dungeons Kill Team Store Championship ,A19l1RZ3a7,3,6,6,AB,CA
+2022-09-24T17:00:00.000Z,True,True,Kill Team Orktoberfest!,Y78WOTpDnA,3,15,14,VA,US
+2022-09-24T18:00:00.000Z,True,True,Asgard 3,3lW38LAZkL,5,8,8,Normandie,FR
+2022-09-24T19:00:00.000Z,True,True,For The Win Kill Team September Tournament,N2kb91BlKy,3,6,6,AL,US
+2022-09-25T00:00:00.000Z,True,True,Dice Arcade THRILL TEAM Competitive #2,MLQuqH2I0x,3,10,10,NSW,AU
+2022-09-25T07:00:00.000Z,True,True,VIII Torneo Kill Team TDBWARGAMES,mAa5Rh20Xp,3,18,16,CT,ES
+2022-09-25T07:30:00.000Z,True,True,Kill Team: Granada - Torneo Mensual (Septiembre 2022),02SYmxQUk3,3,14,12,AN,ES
+2022-09-25T07:30:00.000Z,True,True,Torneo Iniciación Kill Team Sevilla Septiembre,ujCw42I7Gn,3,8,8,Andalucía,ES
+2022-09-25T09:30:00.000Z,True,True,KT HG SD September,CnEzPJU29X,3,10,10,,RU
+2022-09-25T16:00:00.000Z,True,True,Kill Team October,lFVnQ1zmS1,3,9,9,AR,US
+2022-09-25T20:13:00.000Z,True,True,DropZone CORONATION Top 8,kleiOOsaQ0,2,8,8,Mazowieckie,PL
+2022-09-30T20:00:00.000Z,True,True,Nocturno_30/09/22,jfWQgzUtX5,3,24,24,Comunidad de Madrid,ES
+2022-10-01T08:30:00.000Z,True,True,Kill Team: The London Grand Tournament,LZgj7ttOi8,7,39,39,England,GB
+2022-10-01T15:00:00.000Z,True,True,B.Strat October Monthly KT: In The Dark,X0S59tC9lB,3,18,18,New York,US
+2022-10-01T15:00:00.000Z,True,True,Kill Team Orktober Open,4MPIdcvAza,3,9,9,MO,US
+2022-10-02T07:00:00.000Z,True,True,Torneo Rokies Octubre KTV,JhgevXgerW,3,22,22,Comunidad Valenciana,ES
+2022-10-02T08:30:00.000Z,True,True,(Round 2) Kill Team: The London Grand Tournament ,ulbNPnhttW,3,28,28,England,GB
+2022-10-02T16:00:00.000Z,True,True,Kill Team Organized Play,qZEcaVB6V3,3,5,5,VA,US
+2022-10-08T12:00:00.000Z,True,True,US Open Chicago: Kill Team Grand Tournament,1ERRJUQ2E0,5,28,27,IL,United States
+2022-10-08T14:00:00.000Z,True,True,Killtoberfest 3 The Killtoberest ,UBJ9HFgJeF,3,10,10,Pennsylvania,US
+2022-10-09T07:00:00.000Z,True,True,SERVANTS OF THE PEIN 2022,ioYszeTcBP,4,18,18,Catalunya,ES
+2022-10-09T08:30:00.000Z,True,True,KT Granada Octubre,sPjxVHpBYh,3,11,10,Andalucía,ES
+2022-10-09T17:00:00.000Z,True,True,Dragons Lair At Alamo Ranch 2022 KT Tournament,zF0Q90HgS4,3,6,6,TX,US
+2022-10-14T15:00:00.000Z,True,True,FNT KT 14'10'22,n1yPmxSrg9,2,8,8,,RU
+2022-10-14T20:00:00.000Z,True,True,Nocturno_14/10/22,Hv8ReNlB7C,3,12,12,Comunidad de Madrid,ES
+2022-10-15T07:00:00.000Z,True,True,KILLZONE: LA GUARIDA - OCTUBRE 2022,bVvVyRzCXm,3,12,12,PV,ES
+2022-10-15T07:00:00.000Z,True,True,Torneo Por Equipos GTS,mWA6nJBT7U,3,15,15,Comunidad Valenciana,ES
+2022-10-15T07:30:00.000Z,True,True,La Txapela Nodriza ,gjYoWGJ5cx,3,6,6,Navarra,ES
+2022-10-15T08:00:00.000Z,True,True,LTScum GT Kill Team,g0jmVOOFkw,3,9,9,Catalunya,ES
+2022-10-16T06:30:00.000Z,True,True,I Castilla Kill Zone,wsZsmXd3F3,3,6,6,Castilla y León,ES
+2022-10-16T07:00:00.000Z,True,True,Torneo Kill Team - Dark Towers - Quest @Dojo Dei Dispari,yD56ZZFZQY,4,10,10,Emilia-Romagna,IT
+2022-10-16T07:10:00.000Z,True,True,Road To Talavera ,SUGSYHW78t,4,24,24,Comunidad de Madrid,ES
+2022-10-16T08:30:00.000Z,True,True,Kill Team LA FORJA OCTUBRE,gASt7b3UqQ,3,10,10,Galicia,ES
+2022-10-16T16:45:00.000Z,True,True,SoC October Tournament,jgNhfZArrV,3,8,8,Michigan,US
+2022-10-21T16:00:00.000Z,True,True,Squad Games: Kill Team PODS,PNrStm5p7a,3,8,8,California,US
+2022-10-21T17:00:00.000Z,True,True,MAGNUSTURNO I-22,BKmMQxp0br,2,6,6,Canarias,ES
+2022-10-22T07:00:00.000Z,True,True,Tercer Torneo Killteam,apCaI4rC8t,3,14,14,CT,ES
+2022-10-22T07:00:00.000Z,True,True,Torneo Kill Team Santander Octubre,s1Oxi33oG5,3,24,24,Cantabria,ES
+2022-10-22T07:00:00.000Z,True,True,Kill Team Turnaj V Rubi #1,j2Vf8V5FYP,4,10,10,Hlavní město Praha,CZ
+2022-10-22T07:45:00.000Z,True,True,Kill Team lokalnie,dubUxXUFeo,4,14,12,Mazowieckie,PL
+2022-10-22T08:30:00.000Z,True,True,WARHAMMER ABERDEEN KILL TEAM ORGANISED PLAY,gkvHjtKnfI,4,12,12,Scotland,GB
+2022-10-22T08:30:00.000Z,True,True,Lokalny Turniej KT Październik,GGDY5qy1o3,3,18,18,Małopolskie,PL
+2022-10-22T09:30:00.000Z,True,True,Dark Arena Event,3UyNxDCM3C,4,13,12,England,United Kingdom
+2022-10-22T16:00:00.000Z,True,True, SoCal Kill Team Championships,9wHi0rqyTj,4,19,19,California,US
+2022-10-22T16:30:00.000Z,True,True,Just Games Kill Team October RTT,vt3zLVVFRP,3,4,4,NY,US
+2022-10-23T07:00:00.000Z,True,True,Torneo Iniciación Kill Team Sevilla Orktubre,S2FsJGOcMT,3,6,6,Andalucía,ES
+2022-10-23T07:00:00.000Z,True,True,IX Torneo Kill Team TDBWARGAMES,uOJgUfwCs7,3,10,10,CT,ES
+2022-10-23T07:00:00.000Z,True,True,I Torneo Entornos Cerrados,vLoL5mQDJJ,3,14,14,VC,ES
+2022-10-23T07:30:00.000Z,True,True,Kill Team: Granada - Torneo Mensual (Octubre 2022),1rIwL89z5Y,3,8,8,AN,ES
+2022-10-23T08:00:00.000Z,True,True,GT_23/10/2022,hprSp4uh8Q,4,14,14,MD,ES
+2022-10-23T10:00:00.000Z,True,True,KillTeam Manchester - Fear Of The Dark,IOvJDFlWtX,3,18,18,England,GB
+2022-10-23T13:00:00.000Z,True,True,Victory Gamers' KILL TEAM TOURNAMENT ,aHfe9MFwiY,4,16,16,Virginia,US
+2022-10-23T16:00:00.000Z,True,True,Kill Team Doubles,vbJ2Nr8YWI,3,8,3,California,US
+2022-10-23T19:00:00.000Z,True,True,Orléans Warzone II,EKEwEwh84X,4,12,12,Centre-Val de Loire,FR
+2022-10-27T03:55:00.000Z,True,True,Tes Kill Team,PfOCQzLHYY,1,4,4,Banten,ID
+2022-10-29T00:00:00.000Z,True,True,Tokyo Tactical Dirty Dozen VI ITD,PVYnaoByem,3,13,12,神奈川県,JP
+2022-10-29T03:00:00.000Z,True,True,SoW Store KT Store Champ,i9Vq5rZMHt,3,10,10,Banten,ID
+2022-10-29T09:00:00.000Z,True,True,Cryptic Cabin,QAI4nJZ7jf,4,6,6,England,GB
+2022-10-29T10:00:00.000Z,True,True,X Custo Torneo Kill Team,SDauAbTSeh,3,18,18,Galicia,ES
+2022-10-29T12:06:00.000Z,True,True,Golden Tournament,lOtYCC8Q7L,3,4,4,Lazio,IT
+2022-10-29T15:00:00.000Z,True,True,US Open Kansas City: Kill Team Grand Tournament,L7CFMT42TD,5,18,16,MO,United States
+2022-10-29T16:00:00.000Z,True,True,Halloween: Into The Dark,qlDFouWfvE,3,5,4,Maryland,US
+2022-10-29T16:00:00.000Z,True,True,Kill Team Into The Dark/Octarius ,96fIbj1Nh0,4,8,8,New Mexico,US
+2022-10-29T17:00:00.000Z,True,True,KillScream Competitive,06555FVMJV,4,10,10,OR,United States
+2022-10-29T17:00:00.000Z,True,True,TORNEO KT 2 De GAMESMART,XLVk46y1rx,4,10,10,CDMX,MX
+2022-10-29T19:00:00.000Z,True,True,Arena Battle: Into The Dark,N4OBXXyoXg,3,7,7,CA,US
+2022-10-29T20:00:00.000Z,True,True,MAGNUS CANIS VII-22,6iXMRDB9Ol,3,7,7,Canarias,ES
+2022-10-30T09:30:00.000Z,True,True,"Torneo KILL-TEAM Vicenza "" Nome Sconosciuto"" @ BIV@CCO",jTCZnVP8Pv,3,6,6,Veneto,IT
+2022-10-30T09:30:00.000Z,True,True,Crit Or Treat,uXIjE4uKTA,3,16,16,,RU
+2022-10-30T15:00:00.000Z,True,True,Killsangela,EAuQmxPJra,3,12,12,Provincia de Lima,PE
+2022-10-30T17:00:00.000Z,True,True,KillScream Narrative,J9JLBEDN9U,3,10,8,OR,United States
+2022-10-30T21:00:00.000Z,True,True,Orktober Kill Team,wWgKd9hVCw,3,4,4,HI,US
