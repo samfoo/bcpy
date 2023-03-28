@@ -259,6 +259,9 @@ def get_kt_event_pairings(eid: str, limit: int = 500) -> pd.DataFrame:
     }
 
     rj = bcp_request("pairings", params=params)
+    if len(rj) == 0:
+        print(f"⚠️  pairings for event `{eid}` are empty - skipping")
+        return None
 
     return _kt_pairings_df(rj)
 
@@ -337,4 +340,4 @@ def dump_kt_meta_raw(st: str, et: str, csv: bool = True, parquet: bool = True):
 
 
 if __name__ == "__main__":
-    dump_kt_meta_raw("2022-01-01", "2022-11-01")
+    dump_kt_meta_raw("2023-03-01", "2023-03-27")
